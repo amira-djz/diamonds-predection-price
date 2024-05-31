@@ -6,59 +6,101 @@ This repository contains a Jupyter Notebook used for predicting diamond prices a
 👉HTML View
 # Table of Contents
 Introduction
+
 Dataset
+
 Preprocessing
+
 Modeling
+
 Evaluation
+
 Results
+
 Conclusion
+
 Supervisor and Team Members
 # Introduction
+
 Diamond pricing can be complex, considering various attributes such as carat, cut, color, clarity, and dimensions. This notebook explores data preprocessing, feature engineering, and model building to predict diamond prices effectively.
 
 # Dataset
+
 The dataset used in this competition includes the following features:
 
 carat: Weight of the diamond.
+
 cut: Quality of the cut (Fair, Good, Very Good, Premium, Ideal).
+
 color: Diamond color, from J (worst) to D (best).
+
 clarity: A measure of diamond clarity (I1, SI2, SI1, VS2, VS1, VVS2, VVS1, IF).
+
 depth: Total depth percentage.
+
 table: Width of the top of the diamond relative to the widest point.
+
 x: Length in mm.
+
 y: Width in mm.
+
 z: Depth in mm.
+
 price: Price of the diamond (target variable).
 
+
 # Preprocessing
+
 Data preprocessing steps include:
 
+
+
 Handling wrong values.
+
 Handling Outliers.
+
 Feautre Engineering (volume) from dimensional features (x, y, z).
+
 Encoding categorical features (cut, color, clarity).
+
 Feature scaling for numeric variables (carat, depth, table, volume).
+
 Splitting the data into training and testing sets.
 
+
 # Modeling
+
 We experimented with various regression models including:
 
+
 Linear Regression 
+
 Decision Tree Regressor
+
 K Nearest Neighbor Regressor
+
 XGBoost Regressor
+
 Random Forest Regressor
+
 Hyperparameter tuning was performed using GridSearchCV to find the best model.
 
+
 # Evaluation
+
 The model's performance was evaluated using the Root Mean Squared Error (RMSE).
 
 # Results
+
 Model Used: RandomForestRegressor
+
 Best Hyperparameters: {'n_estimators': 200, 'max_features': 3}
+
 Final RMSE: 531.00
 
+
 # Conclusion
+
 Participating in the ShAI Kaggle Competition provided valuable insights into regression modeling and hyperparameter tuning. While there is room for improvement, our model performed reasonably well, placing us 24th out of 56 teams.
 
 # Supervisor and Team Members
